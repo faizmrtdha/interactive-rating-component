@@ -1,2 +1,34 @@
-@use "base";
+@use "base" as *;
+@use "components";
 @use "custom";
+
+body {
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  min-height: 100vh;
+  background-color: black;
+  font-weight: $fw-regular;
+  color: $clr-neutral-100;
+  font-family: $ff-sans;
+}
+h1 {
+  font-size: 1.5rem;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+footer {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  a {
+    color: $clr-neutral-200;
+  }
+}
