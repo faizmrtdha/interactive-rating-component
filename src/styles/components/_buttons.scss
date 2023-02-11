@@ -1,0 +1,46 @@
+@use "../base" as *;
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  appearance: none;
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  font-family: $ff-sans;
+  font-weight: $fw-bold;
+  color: $clr-neutral-100;
+  padding: 0;
+
+  &.btn-submit {
+    background: $clr-primary-900;
+    letter-spacing: 0.125rem;
+    border-radius: 4rem;
+    padding: 0.5em 1.5em;
+    width: 100%;
+    &:hover {
+      background: $clr-neutral-100;
+      color: $clr-primary-900;
+    }
+  }
+
+  &.btn-rating {
+    border-radius: 100%;
+    background: $clr-neutral-700;
+    color: $clr-neutral-200;
+    width: 50px;
+    height: 50px;
+    &:focus {
+      background: $clr-neutral-300;
+      color: $clr-neutral-100;
+    }
+    &:hover {
+      background: $clr-primary-900;
+      color: $clr-neutral-100;
+    }
+  }
+}
